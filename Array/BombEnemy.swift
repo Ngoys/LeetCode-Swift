@@ -7,8 +7,10 @@
 
 class BombEnemy {
     func maxKilledEnemies(_ grid: [[Character]]) -> Int {
-        let m = grid.count, n = grid[0].count
-        var res = 0, rowHit = 0, colHit = Array(repeating: 0, count: n)
+        let m = grid.count
+        let n = grid[0].count
+        var res = 0, rowHit = 0
+        var colHit = Array(repeating: 0, count: n)
 
         for i in 0..<m {
             for j in 0..<n {
